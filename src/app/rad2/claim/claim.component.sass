@@ -1,0 +1,94 @@
+$green: rgba(0,164,156,1)
+$rounded-width-large: 193px
+$rounded-height-large: 55px
+$rounded-radius-large: 27.5px
+$rounded-font-size-large: 22px
+$heavy-font: 600
+$header-width-large: 400px
+$header-height-large: 100px
+$header-font-size-large: 45px
+
+$rounded-width-small: 193px
+$rounded-height-small: 55px
+$rounded-radius-small: 27.5px
+$rounded-font-size-small: 35px
+$header-width-small: 360px
+$header-height-small: 100px
+$header-font-size-small: 35px
+
+.rad2-claim-container
+    font-weight: $heavy-font
+    .rad2-countdown
+        color: #FF4DC1
+        letter-spacing: 0
+        text-align: center
+    .rad2-claim-button
+        background-image: linear-gradient(-180deg, #FF78CF 0%, #FF18B0 99%)
+        box-shadow: 0 2px 0 0 #B00E78
+        color: white
+    .rad2-success-pill
+        background: #DDE4E4
+        color: $green
+    .rad2-success
+        color: $green
+    
+@media (min-width: 400px)
+    .rad2-claim-container
+        .rad2-header-container
+            width: $header-width-small
+            height: $header-height-small
+            font-weight: $heavy-font
+            font-size: $header-font-size-small
+            // font-family: HelveticaNeue-Bold
+            letter-spacing: 0
+            text-align: center
+            line-height: 47px
+            line-spacing: 47px
+        .rad2-countdown
+            width: 400px
+            height: 35px
+            font-size: 30px
+            font-weight: $heavy-font
+        .rad2-claim-button
+            border-radius: $rounded-radius-small
+            height: $rounded-height-small
+            width: $rounded-width-small
+            font-size: $rounded-font-size-small
+            font-weight: $heavy-font
+            margin-top: 30px
+        .rad2-success-pill
+            border-radius: $rounded-radius-small
+            height: $rounded-height-small
+            width: $rounded-width-small
+            font-size: $rounded-font-size-small
+            margin-top: 40px
+
+
+@media (min-width: 1200px)
+    .rad2-claim-container
+        .rad2-header-container
+            width: $header-width-large
+            height: $header-height-large
+            font-weight: $heavy-font
+            font-size: $header-font-size-large
+            // font-family: HelveticaNeue-Bold
+            letter-spacing: 0
+            text-align: center
+            line-height: 50px
+        .rad2-countdown
+            width: 400px
+            height: 35px
+            font-size: 30px
+            font-weight: $heavy-font
+        .rad2-claim-button
+            border-radius: $rounded-radius-large
+            height: $rounded-height-large
+            width: $rounded-width-large
+            font-size: $rounded-font-size-large
+            font-weight: $heavy-font
+        .rad2-success-pill
+            border-radius: $rounded-radius-large
+            height: $rounded-height-large
+            width: $rounded-width-large
+            font-size: $rounded-font-size-large
+            margin-top: 40px

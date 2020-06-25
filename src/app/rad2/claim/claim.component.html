@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center align-items-center rad2-claim-container">
+    <div *ngIf="claim && !success" class="text-center d-flex flex-column align-items-center">
+        <div class="rad2-header-container">
+            <div>{{claim.amount}} {{claim.prize}} on {{claim.game}}</div>
+        </div>
+        
+        <div class="rad2-countdown pb-3">{{formatCountDown(claim.countdown)}}</div>
+        <button class="rad2-claim-button" (click)="onSuccessClicked()">Claim now</button>
+    </div>
+    <div *ngIf="claim && success" class="text-center d-flex flex-column align-items-center">
+        <div class="rad2-header-container rad2-success">
+            <div class="text-center">You've {{claim.amount}} {{claim.prize}} to use now</div>
+        </div>
+        
+        <span class="rad2-success-pill d-flex flex-column justify-content-center">
+            <i class="fas fa-check"></i>
+        </span>
+    </div>
+</div>
