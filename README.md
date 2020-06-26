@@ -1,7 +1,3 @@
-## UI hosted at
-
-http://35.175.107.5:8080
-
 ## Back end server
 
 Run `npm run server`.
